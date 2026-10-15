@@ -1,0 +1,57 @@
+[
+  {
+    "file": "road-01.jpg",
+    "location": "Test road 1, Springfield, IL",
+    "city": "Springfield",
+    "state": "IL",
+    "expected_rating": [1, 3],
+    "expected_confidence": "medium",
+    "author": "Santeri Viinamäki",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Potholes_on_asphalt_road_20171023.jpg"
+  },
+  {
+    "file": "road-02.jpg",
+    "location": "Test road 2, Springfield, IL",
+    "city": "Springfield",
+    "state": "IL",
+    "expected_rating": [2, 5],
+    "expected_confidence": "low",
+    "author": "Tony Webster",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Asphalt_Cracks_(42291397720).jpg"
+  },
+  {
+    "file": "road-03.jpg",
+    "location": "Test road 3, Springfield, IL",
+    "city": "Springfield",
+    "state": "IL",
+    "expected_rating": [4, 7],
+    "expected_confidence": "medium",
+    "author": "Bidgee",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Deteriorated_asphalt.jpg"
+  },
+  {
+    "file": "road-04.jpg",
+    "location": "Test road 4, Springfield, IL",
+    "city": "Springfield",
+    "state": "IL",
+    "expected_rating": [4, 7],
+    "expected_confidence": "medium",
+    "author": "Jaggery",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Patched-up_side_road_surface,_Newbridge_-_geograph.org.uk_-_4668601.jpg"
+  },
+  {
+    "file": "road-05.jpg",
+    "location": "Test road 5, Springfield, IL",
+    "city": "Springfield",
+    "state": "IL",
+    "expected_rating": [6, 10],
+    "expected_confidence": "low",
+    "author": "marius sebastian",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Asphalt_road_surface_(Unsplash).jpg"
+  }
+]

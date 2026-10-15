@@ -155,9 +155,9 @@ export function ResultsPage({ id }: { id: string }) {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <Link className="brand" href="/" aria-label="RoadRate home">
+        <Link className="brand" href="/" aria-label="Bumpz home">
           <BrandMark />
-          <span className="brand-name">RoadRate</span>
+          <span className="brand-name">Bumpz</span>
         </Link>
         <Navigation active="rate" onChange={navigate} />
       </header>
@@ -202,7 +202,7 @@ export function ResultsPage({ id }: { id: string }) {
             </section>
           ) : rating === null ? (
             <section className="content-card">
-              <p className="eyebrow">RoadRate result</p>
+              <p className="eyebrow">Bumpz result</p>
               <h1 className="detail-title">This photo wasn’t rated</h1>
               <p className="card-help">{submission.rationale ?? "This photo could not be rated as an asphalt road."}</p>
             </section>

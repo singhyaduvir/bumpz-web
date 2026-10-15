@@ -70,7 +70,7 @@ export function SubmissionForm() {
   return (
     <form className="form-card" onSubmit={submit} aria-busy={busy}>
       <h2 className="card-heading">Rate a road</h2>
-      <p className="card-help">A quick photo can help paint a bigger picture of your streets.</p>
+      <p className="card-help">Add a photo and location for a road rating.</p>
       <label className="photo-picker" htmlFor="road-photo">
         <input
           ref={inputRef}
@@ -100,8 +100,8 @@ export function SubmissionForm() {
               <svg width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5M5 14v5h14v-5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
             </span>
             <strong>Add a road photo</strong>
-            <span>Take a picture or choose from your camera roll</span>
-            <span>JPEG, PNG, HEIC, or WebP · up to 15 MB</span>
+            <span>Take a photo or choose one</span>
+            <span>JPEG, PNG, HEIC, or WebP · Max 15 MB</span>
           </span>
         )}
       </label>
@@ -121,7 +121,7 @@ export function SubmissionForm() {
         disabled={busy}
         onChange={(event) => setLocation(event.target.value)}
       />
-      <p className="input-hint" id="location-hint">Include a city and state so we can put your road in the right place.</p>
+      <p className="input-hint" id="location-hint">Include a city and state.</p>
       {locationError && <p className="field-error" id="location-error" role="alert">{locationError}</p>}
       {submitError && <p className="error-banner" role="alert" style={{ marginTop: 14 }}>{submitError}</p>}
 
@@ -136,9 +136,9 @@ export function SubmissionForm() {
         </ol>
       )}
       <button className="primary-button form-submit" type="submit" disabled={!ready || busy}>
-        {busy ? "Working on your road…" : "Get my road rating"}
+        {busy ? "Rating your road…" : "Get road rating"}
       </button>
-      <p className="disclaimer">Your rating is an estimate from one photo, not a formal PASER survey.</p>
+      <p className="disclaimer">Photo-based estimate, not a formal PASER survey.</p>
     </form>
   );
 }

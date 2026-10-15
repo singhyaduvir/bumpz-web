@@ -25,9 +25,9 @@ export function AppShell() {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <Link className="brand" href="/" aria-label="RoadRate home">
+        <Link className="brand" href="/" aria-label="Bumpz home">
           <BrandMark />
-          <span className="brand-name">RoadRate</span>
+          <span className="brand-name">Bumpz</span>
         </Link>
         <Navigation active={active} onChange={setActive} />
       </header>
@@ -35,10 +35,9 @@ export function AppShell() {
         {active === "rate" && (
           <div className="home-grid">
             <div className="hero-copy">
-              <p className="eyebrow">Your street, seen clearly</p>
-              <h1 className="hero-title">Every road has a <span>story.</span></h1>
-              <p className="hero-subtitle">Snap a photo and help build a clearer picture of road conditions—one neighborhood at a time.</p>
-              <p className="trust-note"><span aria-hidden="true">✳</span> Made for the people who travel these roads every day</p>
+              <p className="eyebrow">See your street clearly</p>
+              <h1 className="hero-title">Better roads start with one <span>photo.</span></h1>
+              <p className="hero-subtitle">Share a road photo to get a rating and help your community track road conditions.</p>
             </div>
             <SubmissionForm />
           </div>
